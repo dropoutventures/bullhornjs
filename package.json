@@ -10,6 +10,7 @@
     "compile": "babel -d lib/ src/",
     "bundle": "rollup -c rollup.config.js",
     "prepublish": "npm run compile && npm run bundle",
+    "prepare": "npm run compile && npm run bundle"
     "test": "npm run compile && jest"
   },
   "jest": {
